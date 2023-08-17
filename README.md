@@ -2,7 +2,7 @@
 Demo application with Angular & SpringBoot
 
 ## Purpose
-This application aim is to widen current web development knowleadge.
+This application's aim is to widen current web development knowleadge.
 
 
 
