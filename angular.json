@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-welcomecadet": {
+    "WelcomeCadet_front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-welcomecadet",
+            "outputPath": "dist/WelcomeCadet_front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-welcomecadet:build:production"
+              "browserTarget": "WelcomeCadet_front:build:production"
             },
             "development": {
-              "browserTarget": "angular-welcomecadet:build:development"
+              "browserTarget": "WelcomeCadet_front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-welcomecadet:build"
+            "browserTarget": "WelcomeCadet_front:build"
           }
         },
         "test": {
