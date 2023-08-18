@@ -4,9 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './components/login/login.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: '', redirectTo: '/welcome-page', pathMatch: 'full' },
+  { path: 'welcome-page', component: WelcomePageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'main', component: MainComponent }
 ];
