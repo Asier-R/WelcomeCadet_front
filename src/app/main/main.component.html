@@ -1,62 +1,54 @@
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          Home
-        </a>
-  
-        <a class="navbar-item">
-          Documentation
-        </a>
-  
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
+<section class="hero is-$white is-fullheight">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="assets/images/RSI_LOGO2.png" alt="Logo">
           </a>
-  
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
+        </div>
+        <div id="navbarMenuHeroB" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
               About
             </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Report an issue
-            </a>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-$white">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-$white"  routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
-          </div>
-        </div>
+    </nav>
+  </div>
+
+  <div class="hero-body">
+    <div class="container is-flex-direction-column">
+      <div class="container"> <!--style="border:1px solid red;">-->
+        <figure class="image is-128x128" style="margin:auto;" >
+          <img src="assets/images/sc-logo2.webp" alt="Logo"><!-- width="200" height="200" >-->
+        </figure>
+      </div>
+      <div class="container has-text-centered">
+        <p class="title">
+          Welcome Cadet
+        </p>
+        <p class="subtitle">
+          Log & Update your character's assets
+        </p>
       </div>
     </div>
-  </nav>
+  </div>
 
-  
-
-  
+  <div class="hero-foot">
+    
+  </div>
+</section>
