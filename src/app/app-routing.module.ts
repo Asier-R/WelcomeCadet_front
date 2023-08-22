@@ -5,12 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './components/login/login.component';
 import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
-import { SignupComponent } from './components/signup/signup.component';
+import { SignupPageComponent } from './components/signup-page/signup-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome-page', pathMatch: 'full' },
   { path: 'welcome-page', component: WelcomePageComponent },
-  { path: 'signup', component: SignupComponent },
+  { path: 'signup', component: SignupPageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'main', component: MainComponent }
 ];
