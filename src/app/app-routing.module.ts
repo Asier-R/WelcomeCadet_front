@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
 import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 import { SignupPageComponent } from './components/signup-page/signup-page.component';
 
@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/welcome-page', pathMatch: 'full' },
   { path: 'welcome-page', component: WelcomePageComponent },
   { path: 'signup', component: SignupPageComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginPageComponent },
   { path: 'main', component: MainComponent }
 ];
 
