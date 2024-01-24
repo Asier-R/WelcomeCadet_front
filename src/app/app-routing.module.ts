@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
-import { MainPageComponent } from './components/main/main-page.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 import { SignupPageComponent } from './components/signup-page/signup-page.component';
