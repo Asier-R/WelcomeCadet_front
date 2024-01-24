@@ -18,7 +18,10 @@ export class LoginPageComponent {
   });
 
   login() {
-    window.alert('You have succesfuly loged in:\n' + 'username: ' + this.loginForm.value.username + '\n' + 'password: ' + this.loginForm.value.password);
+    const username = this.loginForm.value.username;
+    const password = this.loginForm.value.password;
+
+    window.alert('You have succesfuly logged in:\n' + 'username: ' + username + '\n' + 'password: ' + password);
     this.loginForm.reset();
   }
 

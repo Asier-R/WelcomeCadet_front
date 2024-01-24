@@ -1,36 +1,40 @@
-<div class="field">
-    <label class="label">Username</label>
-    <div class="control">
-        <input class="input" type="text">
-    </div>
-</div>
+<form [formGroup]="signUpForm" (ngSubmit)="signUp()">
 
-<div class="field">
-    <label class="label">Password</label>
-    <div class="control">
-        <input class="input" type="password">
+    <div class="field">
+        <label class="label">Username</label>
+        <div class="control">
+            <input class="input" type="text" formControlName="username">
+        </div>
     </div>
-</div>
 
-<div class="field">
-    <label class="label">Confirm Password</label>
-    <div class="control">
-        <input class="input" type="password">
+    <div class="field">
+        <label class="label">Password</label>
+        <div class="control">
+            <input class="input" type="password" formControlName="password">
+        </div>
     </div>
-</div>
 
-<div class="field">
-    <label class="label">Email</label>
-    <div class="control">
-        <input class="input" type="email">
+    <div class="field">
+        <label class="label">Confirm Password</label>
+        <div class="control">
+            <input class="input" type="password" formControlName="confirmPassword">
+        </div>
     </div>
-</div>
 
-<div class="field is-grouped">
-    <div class="control">
-        <button class="button is-dark">Submit</button>
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+            <input class="input" type="email" formControlName="email">
+        </div>
     </div>
-    <div class="control">
-        <button class="button is-grey is-light">Cancel</button>
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-dark">Submit</button>
+        </div>
+        <div class="control">
+            <button class="button is-grey is-light">Cancel</button>
+        </div>
     </div>
-</div>
+
+</form>
