@@ -12,10 +12,19 @@
 
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-dark" type="submit" (click)="onUserSearch()" >Search</button>
+                    <button class="button is-dark" type="submit" (click)="onUserSearch()"
+                        data-target="userInfoModal">Search</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="box">
+        <p class="modal-card-title">{{userHandle}}</p>
+        <p class="modal-card-title">{{userBio}}</p>
+        <p class="image is-96x96">
+            <img src={{userImage}} alt="">
+        </p>
     </div>
 
     <div class="columns">
@@ -29,7 +38,7 @@
 
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-dark" type="submit" >Search</button>
+                    <button class="button is-dark" type="submit">Search</button>
                 </div>
             </div>
         </div>
@@ -46,11 +55,11 @@
 
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-dark" type="submit" >Search</button>
+                    <button class="button is-dark" type="submit">Search</button>
                 </div>
             </div>
         </div>
     </div>
-<!--</form>-->
+    <!--</form>-->
 
 </div>
