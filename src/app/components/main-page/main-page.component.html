@@ -1,4 +1,65 @@
-<h1>MAIN PAGE</h1>
-<h3>User info</h3>
-<h3>Ship info</h3>
-<h3>Organization info</h3>
+<div class="container">
+
+    <!--<form class="box p-4 has-background-light">-->
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label">Search User</label>
+                <div class="control">
+                    <input class="input is-grey" type="text" placeholder="username">
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-dark" type="submit" (click)="onUserSearch()"
+                        data-target="userInfoModal">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <p class="modal-card-title">{{userHandle}}</p>
+        <p class="modal-card-title">{{userBio}}</p>
+        <p class="image is-96x96">
+            <img src={{userImage}} alt="">
+        </p>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label">Search Ship</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="ship name">
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-dark" type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label">Search Organization</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="organization name">
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-dark" type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</form>-->
+
+</div>
