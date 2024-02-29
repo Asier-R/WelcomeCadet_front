@@ -1,70 +1,27 @@
-<div class="column is-half is-offset-one-quarter">
+<div class="flex-row d-flex align-items-center justify-content-center min-vh-100 text-center">
+    <div class="flex-col">
 
-    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
 
-    <div class="columns">
-        <div class="field is-horizontal">
-            <div class="column" style="padding-bottom: 0; padding-right: 0;">
-                <div class="field-label is-normal">
-                    <label class="label">Username</label>
-                </div>
+            <div class="d-flex flex-row align-items-left">
+                <label class="form-label fw-bold">Username</label>
+            </div>
+            <div class="control mb-2">
+                <input class="input form-control ps-2 pe-2" type="text" formControlName="username">
             </div>
 
-            <div class="column is-half" style="padding-bottom: 0;">
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" type="text" formControlName="username">
-                        </div>
-                    </div>
-                </div>
+            <div class="d-flex flex-row align-items-left">
+                <label class="form-label fw-bold">Password</label>
             </div>
-        </div>
+            <div class="control mb-2">
+                <input class="input form-control ps-2 pe-2" type="password" formControlName="password">
+            </div>
+
+            <div class="d-flex flex-row justify-content-center mt-2">
+                <button class="btn btn-dark rounded-1" type="submit" routerLink="/main" routerLinkActive="active"><strong>Login</strong></button>
+            </div>
+
+        </form>
+
     </div>
-
-
-    <div class="columns">
-        <div class="field is-horizontal">
-            <div class="column" style="padding-bottom: 0; padding-right: 0;">
-                <div class="field-label is-normal">
-                    <label class="label">Password</label>
-                </div>
-            </div>
-
-            <div class="column is-half" style="padding-bottom: 0;">
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" type="password" formControlName="password">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="field is-horizontal">
-        <div class="column is-half" style="padding: 0;" style="padding-bottom: 0; padding-top: 0;">
-            <div class="field-label is-normal" style="width: 25vw;">
-                <!-- Left empty for spacing -->
-            </div>
-        </div>
-
-        <div class="column" style="padding-bottom: 0; padding-top: 0;">
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <button class="button is-dark" type="submit" routerLink="/main" routerLinkActive="active">
-                            Login
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</form>
-
 </div>

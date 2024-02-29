@@ -4,7 +4,7 @@ import { FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup-page.component.html',
-  styleUrls: ['./signup-page.component.sass']
+  styleUrls: ['./signup-page.component.css']
 })
 export class SignupPageComponent {
 
