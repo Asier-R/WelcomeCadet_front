@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-main',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.sass']
+  styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
 

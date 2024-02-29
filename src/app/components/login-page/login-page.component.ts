@@ -4,7 +4,7 @@ import { FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.sass']
+  styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent {
 
