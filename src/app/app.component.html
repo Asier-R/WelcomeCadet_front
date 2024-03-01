@@ -1,28 +1,28 @@
 
 
+<nav class="navbar navbar-expand-lg sticky-top bg-white">
+  <div class="container-fluid col-lg-10 col-xxl-8">
+    <a class="navbar-brand" routerLink="/welcome-page">
+      <img src="assets/images/RSI_LOGO2.png" alt="Logo" height="30">
+    </a>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <a class="btn me-2" routerLink="/signup">
+        About
+      </a>
+      <a class="btn btn-light bg-white btn-outline-secondary rounded-1 me-2" routerLink="/signup">
+        <strong>Sign up</strong>
+      </a>
+      <a class="btn btn-light bg-white btn-outline-secondary rounded-1 me-2" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">
+        Log in
+      </a>
+    </div>
+  </div>
+</nav>
 
 
 <div class="container-fluid p-0 overflow-auto">
 
 
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid col-lg-10 col-xxl-8">
-      <a class="navbar-brand" routerLink="/welcome-page">
-        <img src="assets/images/RSI_LOGO2.png" alt="Logo" height="30">
-      </a>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <a class="btn me-2" routerLink="/signup">
-          About
-        </a>
-        <a class="btn btn-light bg-white btn-outline-secondary rounded-1 me-2" routerLink="/signup">
-          <strong>Sign up</strong>
-        </a>
-        <a class="btn btn-light bg-white btn-outline-secondary rounded-1 me-2" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">
-          Log in
-        </a>
-      </div>
-    </div>
-  </nav>
 
 
   <router-outlet></router-outlet>
