@@ -1,0 +1,53 @@
+<div class="flex-row d-flex align-items-center justify-content-center min-vh-100 text-center">
+    <div class="flex-col">
+        <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+
+            <div class="d-flex flex-row align-items-left">
+                <label class="form-label fw-bold">Username</label>
+            </div>
+            <div class="control mb-2">
+                <input class="input form-control ps-2 pe-2" type="text" formControlName="username">
+            </div>
+            <div class="d-flex flex-row align-items-left">
+                <p *ngIf="!flags.isUsernameValid" style="color: red">Username not valid</p>
+            </div>
+
+            <div class="d-flex flex-row align-items-left">
+                <label class="form-label fw-bold">Password</label>
+            </div>
+            <div class="control mb-2">
+                <input class="input form-control ps-2 pe-2" type="password" formControlName="password">
+            </div>
+            <div class="d-flex flex-row align-items-left">
+                <p *ngIf="!flags.isPasswordValid" style="color: red">Password not valid</p>
+            </div>
+
+            <div class="d-flex flex-row align-items-left">
+                <label class="form-label fw-bold">Confirm Password</label>
+            </div>
+            <div class="control mb-2">
+                <input class="input form-control ps-2 pe-2" type="password" formControlName="confirmPassword">
+            </div>
+            <div class="d-flex flex-row align-items-left">
+                <p *ngIf="!flags.isConfirmPasswordValid" style="color: red">Please confirm password</p>
+            </div>
+
+            <div class="d-flex flex-row align-items-left">
+                <label class="form-label fw-bold">Email</label>
+            </div>
+            <div class="control mb-2">
+                <input class="input form-control ps-2 pe-2" type="email" formControlName="email">
+            </div>
+            <div class="d-flex flex-row align-items-left">
+                <p *ngIf="!flags.isEmailValid" style="color: red">Email not valid</p>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-center mt-2">
+                <button class="btn btn-dark rounded-1 me-2"><strong>Submit</strong></button>
+                <button class="btn btn-light bg-white btn-outline-secondary rounded-1 me-2">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+</div>
