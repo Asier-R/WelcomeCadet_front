@@ -1,7 +1,16 @@
-<div class="flex-row d-flex min-vh-100 align-items-center justify-content-center text-center">
-    <div class="flex-col">
-        <app-search-theme-card [theme]="userSearchTheme" [description]="userThemeDescription" [image]="userSearchImage"></app-search-theme-card>
-        <app-search-theme-card [theme]="shipSearchTheme" [description]="shipThemeDescription" [image]="shipSearchImage"></app-search-theme-card>
-        <app-search-theme-card [theme]="organizationSearchTheme" [description]="organizationThemeDescription" [image]="organizationSearchImage"></app-search-theme-card>
+<div class="container-fluid p-0 m-0">
+    <div class="row min-vh-100 align-items-center text-center">
+        <div class="d-flex col-md-4 col-lg-12 justify-content-center mt-2 mb-2">
+            <app-search-theme-card [theme]="userSearchTheme" [description]="userThemeDescription"
+                [image]="userSearchImage"></app-search-theme-card>
+        </div>
+        <div class="d-flex col-md-4 col-lg-12 justify-content-center mt-2 mb-2">
+            <app-search-theme-card [theme]="shipSearchTheme" [description]="shipThemeDescription"
+                [image]="shipSearchImage"></app-search-theme-card>
+        </div>
+        <div class="d-flex col-md-4 col-lg-12 justify-content-center mt-2 mb-2">
+            <app-search-theme-card [theme]="organizationSearchTheme" [description]="organizationThemeDescription"
+                [image]="organizationSearchImage"></app-search-theme-card>
+        </div>
     </div>
 </div>
