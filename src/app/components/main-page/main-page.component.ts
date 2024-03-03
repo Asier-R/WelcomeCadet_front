@@ -15,4 +15,5 @@ export class MainPageComponent {
   organizationSearchTheme = 'Search organization';
   organizationThemeDescription = 'Search information for the desired organization.';
   organizationSearchImage = 'assets/images/organizations.png';
+  searchPageLink="search";
 }
