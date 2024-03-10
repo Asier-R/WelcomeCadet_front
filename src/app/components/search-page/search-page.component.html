@@ -1,10 +1,10 @@
-<div class="container-fluid p-0">
+<div class="container-fluid p-0 col-lg-10 col-xxl-8">
 
 
     <div class="row justify-content-sm-center">
-        <div class="col-md-10 col-sm-12 bg-primary">
+        <div class="col-md-10 col-sm-12">
             <div class="row">
-                <div class="col-md-3 col-sm-12 bg-success">
+                <div class="col-md-3 col-sm-12">
 
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -21,7 +21,7 @@
                 </div>
 
 
-                <div class="col-md-9 col-sm-12 bg-danger">
+                <div class="col-md-9 col-sm-12">
 
                     <div class="control flex-fill mb-2">
                         <input class="input form-control ps-2 pe-2" type="text" formControlName="username">
@@ -33,7 +33,7 @@
 
         </div>
 
-        <div class="col-md-2 col-sm-12 bg-warning">
+        <div class="col-md-2 col-sm-12">
 
             <button class="btn btn-dark rounded-1 mb-4" (click)="onUserSearch()"
                 data-target="userInfoModal"><strong>Search</strong>
@@ -47,10 +47,10 @@
 
     <div class="row align-items-center">
 
-        <div class="col justify-content-left bg-success">
+        <div class="col justify-content-left">
             <p class="modal-card-title">{{userBio}}</p>
         </div>
-        <div class="col bg-info">
+        <div class="col">
             <p class="image is-96x96">
                 <img src={{userImage}} alt="">
             </p>
