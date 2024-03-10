@@ -1,7 +1,7 @@
 <div class="container-fluid p-0 col-lg-10 col-xxl-8">
 
 
-    <div class="row justify-content-sm-center">
+    <div class="row m-0 mt-2">
         <div class="col-md-10 col-sm-12">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
@@ -12,9 +12,9 @@
                             Search selection
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">User</a></li>
-                            <li><a class="dropdown-item" href="#">Ship</a></li>
-                            <li><a class="dropdown-item" href="#">Organization</a></li>
+                            <li *ngFor="let item of items">
+                                <a class="dropdown-item" (click)="setSelectedSearch(item)">{{item}}</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -24,7 +24,7 @@
                 <div class="col-md-9 col-sm-12">
 
                     <div class="control flex-fill mb-2">
-                        <input class="input form-control ps-2 pe-2" type="text" formControlName="username">
+                        <input class="input form-control ps-2 pe-2" type="text" formControlName="username" placeholder="{{selectedSearch}}">
                     </div>
 
                 </div>
